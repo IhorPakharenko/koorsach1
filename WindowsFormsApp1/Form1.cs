@@ -12,13 +12,31 @@ namespace WindowsFormsApp1
 
         private void ButtonDecipher_Click(object sender, EventArgs e)
         {
-            var deciphered = TranspositionCipher.Decipher(TextBoxToDecipher.Text);
+            string deciphered;
+            if (TextBoxToDecipherKey.Text.Length > 0)
+            {
+                deciphered = TranspositionCipher.Decipher(TextBoxToDecipher.Text, TextBoxToDecipherKey.Text);
+            }
+            else
+            {
+                deciphered = TranspositionCipher.Decipher(TextBoxToDecipher.Text);
+            }
+
             TextBoxToEnchipher.Text = deciphered;
         }
 
         private void ButtonEncipher_Click(object sender, EventArgs e)
         {
-            var enciphered = TranspositionCipher.Encipher(TextBoxToEnchipher.Text);
+            string enciphered;
+            if (TextBoxToEncipherKey.Text.Length > 0)
+            {
+                enciphered = TranspositionCipher.Encipher(TextBoxToEnchipher.Text, TextBoxToEncipherKey.Text);
+            }
+            else
+            {
+                enciphered = TranspositionCipher.Encipher(TextBoxToEnchipher.Text);
+            }
+
             TextBoxToDecipher.Text = enciphered;
         }
     }
