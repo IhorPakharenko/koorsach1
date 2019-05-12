@@ -21,15 +21,5 @@ namespace WindowsFormsApp1
             var enciphered = TranspositionCipher.Encipher(TextBoxToEnchipher.Text);
             TextBoxToDecipher.Text = enciphered;
         }
-
-        private void TextBoxToDecipher_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBoxToEnchipher_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
