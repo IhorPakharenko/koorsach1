@@ -34,6 +34,8 @@
             this.ButtonEncipher = new System.Windows.Forms.Button();
             this.TextBoxToDecipherKey = new System.Windows.Forms.TextBox();
             this.TextBoxToEncipherKey = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ButtonDecipher
@@ -50,17 +52,15 @@
             // 
             this.TextBoxToDecipher.Location = new System.Drawing.Point(12, 25);
             this.TextBoxToDecipher.Name = "TextBoxToDecipher";
-            this.TextBoxToDecipher.Size = new System.Drawing.Size(356, 20);
+            this.TextBoxToDecipher.Size = new System.Drawing.Size(348, 20);
             this.TextBoxToDecipher.TabIndex = 1;
-            this.TextBoxToDecipher.TextChanged += new System.EventHandler(this.TextBoxToDecipher_TextChanged);
             // 
             // TextBoxToEnchipher
             // 
-            this.TextBoxToEnchipher.Location = new System.Drawing.Point(427, 25);
+            this.TextBoxToEnchipher.Location = new System.Drawing.Point(433, 25);
             this.TextBoxToEnchipher.Name = "TextBoxToEnchipher";
-            this.TextBoxToEnchipher.Size = new System.Drawing.Size(361, 20);
+            this.TextBoxToEnchipher.Size = new System.Drawing.Size(355, 20);
             this.TextBoxToEnchipher.TabIndex = 2;
-            this.TextBoxToEnchipher.TextChanged += new System.EventHandler(this.TextBoxToEnchipher_TextChanged);
             // 
             // ButtonEncipher
             // 
@@ -86,11 +86,29 @@
             this.TextBoxToEncipherKey.Size = new System.Drawing.Size(195, 20);
             this.TextBoxToEncipherKey.TabIndex = 5;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(366, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(61, 20);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Text = "Key";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(366, 25);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(61, 20);
+            this.textBox2.TabIndex = 7;
+            this.textBox2.Text = "Text";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TextBoxToEncipherKey);
             this.Controls.Add(this.TextBoxToDecipherKey);
             this.Controls.Add(this.ButtonEncipher);
@@ -112,6 +130,8 @@
         private System.Windows.Forms.Button ButtonEncipher;
         private System.Windows.Forms.TextBox TextBoxToDecipherKey;
         private System.Windows.Forms.TextBox TextBoxToEncipherKey;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
